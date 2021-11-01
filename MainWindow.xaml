@@ -1,0 +1,24 @@
+﻿<Window x:Class="RoomKovalevskaya.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoomKovalevskaya"
+        mc:Ignorable="d"
+        Title="Room Interier" Height="450" Width="800"
+                              MinHeight="450" MaxHeight="400"
+                              Icon="Resources\logo.png" Background="#EEEEEE">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Stretch">
+            <Frame x:Name="frmMain"/>
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+            <TextBlock Text="Room Interier" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Image Source="Resources\logo.png" Width="50"/>
+        </StackPanel>
+    </Grid>
+</Window>
